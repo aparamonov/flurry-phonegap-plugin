@@ -29,6 +29,7 @@
 		<source-file src="src/ios/FlurryPlugin.m" />
 		<framework src="SystemConfiguration.framework" />
 		<framework src="Security.framework" />
+		<source-file src="src/ios/lib/libFlurry_5.4.0.a" framework="true"/>
 	</platform>
 
 	<platform name="android">
@@ -49,5 +50,6 @@
 		<config-file target="AndroidManifest.xml" parent="/*">
 		  <uses-permission android:name="android.permission.INTERNET" />
 		</config-file>
+		<source-file src="src/android/lib/FlurryAnalytics-4.2.0.jar" target-dir="libs/" />
 	</platform>
 </plugin>
